@@ -4,21 +4,17 @@
   "description": "Multi line or single line alphabetical sorter.",
   "version": "2.0.1",
   "icon": "images/icon.png",
-  "publisher": "ue",
+  "publisher": "jayblack388",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ue/alphabetical-sorter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ue/alphabetical-sorter/issues",
-    "email": "ugurerdal93@gmail.com"
+    "url": "https://github.com/jayblack388/alphabetical-sorter"
   },
   "engines": {
-    "vscode": "^1.20.0"
+    "vscode": "^1.74.0"
   },
   "categories": ["Formatters"],
-  "activationEvents": ["onCommand:extension.sortIt"],
+  "activationEvents": [],
   "main": "./src/extension",
   "contributes": {
     "commands": [
@@ -37,14 +33,18 @@
     ]
   },
   "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "commit": "cz",
+    "package": "vsce package --no-yarn"
   },
   "devDependencies": {
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.6",
-    "eslint": "^4.11.0",
-    "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "@vscode/vsce": "^2.22.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "ovsx": "^0.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
