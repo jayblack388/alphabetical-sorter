@@ -2,7 +2,7 @@
   "name": "alphabetical-sorter",
   "displayName": "Alphabetical Sorter",
   "description": "Multi line or single line alphabetical sorter.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "images/icon.png",
   "publisher": "jayblack388",
   "license": "MIT",
